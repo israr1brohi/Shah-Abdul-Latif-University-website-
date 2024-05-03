@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.slider {
+    margin-top: 50px;
+    width: 50%;
+    /* Adjust as needed */
+}
+
+.content {
+    width: 45%;
+    /* Adjust as needed */
+    text-align: justify;
+    margin-top: 120px;
+}
+
+
+
+
+.content,
+.content-second {
+    background-color: rgba(208, 255, 0, 0.062);
+    /* Blue color with 10% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    color: #333;
+    /* Change color of h2 if needed */
+}
+
+.content p,
+.content-second p {
+    color: #3a3a3a;
+    /* Change color of paragraphs if needed */
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.content-second {
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1002px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        width: calc(100% - 10px);
+        /* Calculate width with margin */
+        margin: 0 5px;
+        /* Add 5px margin on left and right */
+        text-align: justify;
+
+    }
+
+
+    .second-paragraph {
+
+        text-align: justify;
+
+    }
+}
+
+
+#second-paragraph {
+
+    /* Calculate width with margin */
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /* Add 5px margin on left and right */
+    text-align: justify;
+
+}
+
+
+.carousel-inner img {
+    border-radius: 10px;
+}

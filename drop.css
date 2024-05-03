@@ -1,0 +1,94 @@
+/* Your CSS styles for dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    max-width: 260px;
+    z-index: 1;
+    border-radius: 15px;
+    padding: 0;
+
+
+    background-color: #f9f9f9;
+
+
+}
+
+
+.dropdown-content a {
+    color: rgb(0, 0, 12);
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: #277927;
+    color: white;
+    border: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(0, 0, 255, 0);
+    color: rgb(0, 21, 255);
+}
+
+
+/* -----Dropdonw for smaller screens--- */
+@media(max-width:300px) {
+    .dropdown-content a {
+
+
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+}
+
+/* ------scrolling--- */
+
+
+
+@media(max-width:1080px) and (min-height:200px) {
+    nav {
+        max-height: 75vh;
+        /* Set maximum height to 75% of the viewport height */
+        overflow-y: auto;
+        /* Enable vertical scrolling when content exceeds max height */
+    }
+
+    .dropdown-content a {
+
+
+        font-size: 14px;
+        margin-top: 3px;
+    }
+
+}
+
+
+@media(min-width:1400px) {
+    .dropdown-content a {
+
+        font-size: 20px;
+    }
+}
