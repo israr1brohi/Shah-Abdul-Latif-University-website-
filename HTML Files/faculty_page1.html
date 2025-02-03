@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Section</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+
+    <link rel="stylesheet" href="./Faculty Page/style.css">
+    <link rel="stylesheet" href="./Faculty Page/conten.css">
+    <link rel="stylesheet" href="./Faculty Page/drop.css">
+    <link rel="stylesheet" href="./Faculty Page/faculty_section.css">
+</head>
+
+<body>
+
+    <!-- MOBILE SCREEN -->
+    <input type="checkbox" id="menu">
+    <!-- END MOBILE SCREEN -->
+    <header>
+        <div class="logo">
+            <svg id="logo-35" width="50" height="39" viewBox="0 0 50 39" fill="none" xmlns="">
+                <!--Adding SALU LOGO-->
+                <image href="logo.png" width="50" height="39" />
+            </svg>
+            <h1>Shah Abdul Latif University <span>Shahdadkot Campus</span></h1>
+        </div>
+        <!-- MOBILE SCREEN -->
+        <label for="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <!-- END MOBILE SCREEN -->
+        <nav>
+            <a style="font-weight: bold;" href="./index.html">Home</a>
+
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">University</a>
+                <div class="dropdown-content">
+                    <a href="./Admission.html">Admissions</a>
+                    <a href="./Library.html">Library</a>
+                    <a href="./QES.html">QES</a>
+
+                    <a href="./ORIC.html">ORIC</a>
+                    <a href="./Examination.html">Examination Policy</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">Administration</a>
+                <div class="dropdown-content">
+                    <a href="./PVC.html">PVC Message</a>
+                    <a href="./faculty_page.html">Faculty Staff</a>
+                    <a href="./Administrative_Staff.html">Administrative Staff</a> <!-- New link -->
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">Departments</a>
+                <div class="dropdown-content">
+                    <a href="./CS_Department.html">Computer Science</a>
+                    <a href="./BBA_department.html">Business Administration</a>
+                    <a href="./English_department.html">English</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Faculty Page Section -->
+    <!-- Faculty Page Section -->
+    <div class="faculty-section">
+
+        <hr class="line-break">
+
+        <h2><span> Faculty of Computer Science</span></h2>
+
+        <div class="faculty-members">
+            <!-- Faculty Members -->
+            <div class="faculty-member">
+                <img src="./Faculty Page/sajjidCS.jpg" alt="Sajjid's Profile">
+                <div class="details">
+                    <p>Name: Sajjid Ahmed</p>
+                    <p>Designation: Assistant Professor</p>
+                    <p>Qualification: MS-CS</p>
+                    <p>Time Period of Service: 7 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: Computer Privacy, ML/DL</p>
+                    <p><a href="mailto:xyz@gmail.com">sajjid.ghanghro@salu.edu.pk</a></p>
+                </div>
+            </div>
+
+            <!-- End of Faculty Members -->
+            <div class="faculty-member">
+                <img src="./Faculty Page/imran.jpg" alt="Faculty 2">
+                <div class="details">
+                    <p>Name: Dr Imran Memon</p>
+                    <p>Designation: Professor</p>
+                    <p>Qualification: PhD</p>
+                    <p>Time Period of Service: 10 years</p>
+                    <p>Research Publication: 144</p>
+                    <p>Area of Interest: AI/ML/DL</p>
+                    <p><a href="mailto:abc@gmail.com">imran.memon@salu.edu.pk</a></p>
+                </div>
+            </div>
+            <div class="faculty-member">
+                <img src="./Faculty Page/jameel.jpg" alt="Faculty 2">
+                <div class="details">
+                    <p>Name: Jameel Ahmed</p>
+                    <p>Designation: Lecturer</p>
+                    <p>Qualification: MS CS</p>
+                    <p>Time Period of Service: 5 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: Computer Graphics, Image Processing</p>
+                    <p><a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+                </div>
+            </div>
+            <!-- Repeat this block for each faculty member -->
+            <div class="faculty-member">
+                <img src="./Faculty Page/male-icon.png" alt="Faculty 2">
+                <div class="details">
+                    <p>Name: Dr Ali Hassan</p>
+                    <p>Designation: Professor</p>
+                    <p>Qualification: PhD</p>
+                    <p>Time Period of Service: 12 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: Data Science, Analytical Geometry, Applied Mathematcs</p>
+                    <p><a href="mailto:abc@gmail.com">alihassan.iiui.math@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="faculty-member">
+                <img src="./Faculty Page/emptyPIC.png" alt="Faculty 1">
+                <div class="details">
+                    <p>Name: Ms Mahpara Tunio</p>
+                    <p>Designation: Lecturer</p>
+                    <p>Qualification: MS- CS</p>
+                    <p>Time Period of Service: 6 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: AI, Computer Vision and Image Processing</p>
+                    <p><a href="mailto:xyz@gmail.com">mahpara.tunio@salu.edu.pk</a></p>
+                </div>
+            </div>
+            <div class="faculty-member">
+                <img src="./Faculty Page/emptyPIC.png" alt="Faculty 1">
+                <div class="details">
+                    <p>Name: Ms Yumna Magsi</p>
+                    <p>Designation: Lecturer/HOD CS dept</p>
+                    <p>Qualification: MS CS</p>
+                    <p>Time Period of Service: 6 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: IoT, Computer Networkings</p>
+                    <p><a href="mailto:abc@gmail.com">yumnamagsi@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="faculty-member">
+                <img src="./Faculty Page/zahid.jpg" alt="Faculty 1">
+                <div class="details">
+                    <p>Name: Zahid Ali</p>
+                    <p>Designation: Teacher Assistant</p>
+                    <p>Qualification: BS CS</p>
+                    <p>Time Period of Service: 0 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: Software Development, ML/AI</p>
+                    <p><a href="mailto:abc@gmail.com">zahidali9028@gmail.com</a></p>
+                </div>
+            </div>
+
+            <!-- End of Faculty Members -->
+        </div>
+
+        <!-- Repeat the above structure for Faculty of Business Administration and Faculty of English -->
+
+        <hr class="line-break">
+
+        <h2><span> Faculty of Business Administration</span></h2>
+
+
+
+        <div class="faculty-members">
+            <!-- Faculty Members -->
+            <div class="faculty-member">
+                <img src="./Faculty Page/roshan.jpg" alt="Sajjid's Profile">
+                <div class="details">
+                    <p>Name: Roshan Ali Umrani</p>
+                    <p>Designation: Assistant Professor</p>
+                    <p>Qualification: M.Phil</p>
+                    <p>Time Period of Service: 7 years</p>
+                    <p>Research Publication: 3</p>
+                    <p>Area of Interest: Economics</p>
+                    <p><a href="mailto:xyz@gmail.com">abc@gmail.com</a></p>
+                </div>
+            </div>
+
+            <!-- End of Faculty Members -->
+            <div class="faculty-member">
+                <img src="./Faculty Page/amanullah.jpg" alt="Faculty 2">
+                <div class="details">
+                    <p>Name: Dr Amanullah Channa</p>
+                    <p>Designation: Professor</p>
+                    <p>Qualification: PhD</p>
+                    <p>Time Period of Service: 4 years</p>
+                    <p>Research Publication: 13</p>
+                    <p>Area of Interest: Economics</p>
+                    <p><a href="mailto:abc@gmail.com">amanullah.channa@salu.edu.pk</a></p>
+                </div>
+            </div>
+            <div class="faculty-member">
+                <img src="./Faculty Page/rasheed.jpg" alt="Faculty 2">
+                <div class="details">
+                    <p>Name: Dr Rasheed Mangi</p>
+                    <p>Designation: Assistant Professor</p>
+                    <p>Qualification: PhD, MS, MBA, LLB</p>
+                    <p>Time Period of Service: 10 years</p>
+                    <p>Research Publication: 10</p>
+                    <p>Area of Interest: HRM, Finance</p>
+                    <p><a href="mailto:abc@gmail.com">rasheed.mangi@salu.edu.pk</a></p>
+                </div>
+            </div>
+            <!-- Repeat this block for each faculty member -->
+            <div class="faculty-member">
+                <img src="./Faculty Page/emptyPIC.png" alt="Faculty 2">
+                <div class="details">
+                    <p>Name: Dr Benazir Solangi</p>
+                    <p>Designation: Assistant Professor</p>
+                    <p>Qualification: PhD in HRM</p>
+                    <p>Time Period of Service: 18 months</p>
+                    <p>Research Publication: 6</p>
+                    <p>Area of Interest: HRM</p>
+                    <p><a href="mailto:abc@gmail.com">benazir.solangi@salu.edu.pk</a></p>
+                </div>
+            </div>
+
+            <div class="faculty-member">
+                <img src="./Faculty Page/male-icon.png" alt="Faculty 1">
+                <div class="details">
+                    <p>Name: Ghulam Ali</p>
+                    <p>Designation: Teaching Assistant</p>
+                    <p>Qualification: M.Phil</p>
+                    <p>Time Period of Service: 3.5 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: Business Administration</p>
+                    <p><a href="mailto:xyz@gmail.com">solangighulamali@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="faculty-member">
+                <img src="./Faculty Page/sajjid.jpg" alt="Faculty 1">
+                <div class="details">
+                    <p>Name: Sajid Ali</p>
+                    <p>Designation: Lecturer</p>
+                    <p>Qualification: Masters in Pak Studies</p>
+                    <p>Time Period of Service: 6 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: Pakistan Affairs</p>
+                    <p><a href="mailto:abc@gmail.com">sajidtumrani111@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="faculty-member">
+                <img src="./Faculty Page/male-icon.png" alt="Faculty 1">
+                <div class="details">
+                    <p>Name: abc</p>
+                    <p>Designation: abc</p>
+                    <p>Qualification: abc</p>
+                    <p>Time Period of Service: 0 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: abc</p>
+                    <p><a href="mailto:abc@gmail.com">abc</a></p>
+                </div>
+            </div>
+
+            <!-- End of Faculty Members -->
+        </div>
+        <hr class="line-break">
+
+        <h2><span>Faculty of English Language and Literature</span></h2>
+
+
+
+        <div class="faculty-members">
+            <!-- Faculty Members -->
+            <div class="faculty-member">
+                <img src="./Faculty Page/male-icon.png" alt=" Profile">
+                <div class="details">
+                    <p>Name: abc</p>
+                    <p>Designation: abc</p>
+                    <p>Qualification: MS-CS</p>
+                    <p>Time Period of Service: 7 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: Computer Privacy, ML/DL</p>
+                    <p><a href="mailto:xyz@gmail.com">abc</a></p>
+                </div>
+            </div>
+
+            <!-- End of Faculty Members -->
+            <div class="faculty-member">
+                <img src="./Faculty Page/male-icon.png" alt="Faculty 2">
+                <div class="details">
+                    <p>Name: abc</p>
+                    <p>Designation: abc</p>
+                    <p>Qualification: PhD</p>
+                    <p>Time Period of Service: 10 years</p>
+                    <p>Research Publication: 144</p>
+                    <p>Area of Interest: AI/ML/DL</p>
+                    <p><a href="mailto:abc@gmail.com">abc</a></p>
+                </div>
+            </div>
+            <div class="faculty-member">
+                <img src="./Faculty Page/male-icon.png" alt="Faculty 2">
+                <div class="details">
+                    <p>Name: </p>
+                    <p>Designation: </p>
+                    <p>Qualification: MS CS</p>
+                    <p>Time Period of Service: 5 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: </p>
+                    <p><a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+                </div>
+            </div>
+            <!-- Repeat this block for each faculty member -->
+            <div class="faculty-member">
+                <img src="./Faculty Page/male-icon.png" alt="Faculty 2">
+                <div class="details">
+                    <p>Name: </p>
+                    <p>Designation: </p>
+                    <p>Qualification: PhD</p>
+                    <p>Time Period of Service: 12 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: </p>
+                    <p><a href="mailto:abc@gmail.com"></a></p>
+                </div>
+            </div>
+
+            <div class="faculty-member">
+                <img src="./Faculty Page/male-icon.png" alt="Faculty 1">
+                <div class="details">
+                    <p>Name:</p>
+                    <p>Designation: Lecturer</p>
+                    <p>Qualification: MS- CS</p>
+                    <p>Time Period of Service: 6 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: </p>
+                    <p><a href="mailto:xyz@gmail.com"></a></p>
+                </div>
+            </div>
+            <div class="faculty-member">
+                <img src="./Faculty Page/male-icon.png" alt="Faculty 1">
+                <div class="details">
+                    <p>Name: </p>
+                    <p>Designation: Lecturer/HOD CS dept</p>
+                    <p>Qualification: MS CS</p>
+                    <p>Time Period of Service: 6 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: IoT, s</p>
+                    <p><a href="mailto:abc@gmail.com"></a></p>
+                </div>
+            </div>
+            <div class="faculty-member">
+                <img src="./Faculty Page/male-icon.png" alt="Faculty 1">
+                <div class="details">
+                    <p>Name: </p>
+                    <p>Designation: Teacher Assistant</p>
+                    <p>Qualification: BS CS</p>
+                    <p>Time Period of Service: 0 years</p>
+                    <p>Research Publication: NA</p>
+                    <p>Area of Interest: I</p>
+                    <p><a href="mailto:abc@gmail.com"></a></p>
+                </div>
+            </div>
+
+            <!-- End of Faculty Members -->
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <hr>
+            <div class="quick-links">
+                <a href="./Contact_us.html">Contact us</a>
+                <a href="./Image_Gallery.html">Image Gallery</a>
+                <a href="./Computer_Lab.html">Computer Labs</a>
+                <a href="./ORIC.html">Campus</a>
+            </div>
+            <p>Shah Abdul Latif University, Shahdadkot Campus &copy; 2024. All rights reserved.</p>
+        </footer>
+
+        <script src="./Faculty Page/script.js"></script>
+
+</body>
+
+</html>

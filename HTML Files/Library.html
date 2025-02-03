@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Library</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Your custom CSS files -->
+    <link rel="stylesheet" href="./Library/style.css">
+    <link rel="stylesheet" href="./Library/conten.css">
+    <link rel="stylesheet" href="./Library/drop.css">
+    <link rel="stylesheet" href="./Library/pvc.css">
+
+</head>
+
+<body>
+
+    <!-- MOBILE SCREEN -->
+    <input type="checkbox" id="menu">
+    <!-- END MOBILE SCREEN -->
+    <header>
+        <div class="logo">
+            <svg id="logo-35" width="50" height="39" viewBox="0 0 50 39" fill="none" xmlns="">
+                <!--Adding SALU LOGO-->
+                <image href="logo.png" width="50" height="39" />
+            </svg>
+            <h1>Shah Abdul Latif University <span>Shahdadkot Campus</span></h1>
+        </div>
+        <!-- MOBILE SCREEN -->
+        <label for="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <!-- END MOBILE SCREEN -->
+        <nav>
+            <a style="font-weight: bold;" href="./index.html">Home</a>
+
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">University</a>
+                <div class="dropdown-content">
+                    <a href="./Admission.html">Admissions</a>
+                    <a href="./Library.html">Library</a>
+                    <a href="./QES.html">QES</a>
+
+                    <a href="./ORIC.html">ORIC</a>
+                    <a href="./Examination.html">Examination Policy</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">Administration</a>
+                <div class="dropdown-content">
+                    <a href="./PVC.html">PVC Message</a>
+                    <a href="./faculty_page.html">Faculty Staff</a>
+                    <a href="./Administrative_Staff.html">Administrative Staff</a> <!-- New link -->
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">Departments</a>
+                <div class="dropdown-content">
+                    <a href="./CS_Department.html">Computer Science</a>
+                    <a href="./BBA_department.html">Business Administration</a>
+                    <a href="./English_department.html">English</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br>
+    <!-- Bootstrap Cover Image -->
+
+    <div class="container-fluid px-0">
+        <div class="jumbotron jumbotron-fluid">
+            <main class="library-content">
+                <h2>About Library</h2>
+                <p>The library at Shah Abdul Latif University Shahdadkot Campus is a vital resource for students and
+                    faculty
+                    alike, offering a welcoming space for learning and exploration. With its wide range of books,
+                    journals, and
+                    multimedia materials, the library caters to diverse academic interests and disciplines. The
+                    environment is
+                    conducive to study and research, providing a quiet and peaceful atmosphere for concentration. From
+                    literature to science, the library's collection covers a broad spectrum of subjects, ensuring that
+                    there is
+                    something for everyone. It serves as a central hub for academic activities, embodying the
+                    university's
+                    commitment to education and intellectual enrichment...</p>
+
+                <!-- Add more library related contents here -->
+
+            </main>
+            <div class="cover">
+                <div class="bg-image" id="bgImage"></div>
+                <div class="library-catalogue">
+                    <h2>Library Catalogue</h2>
+                    <ul>
+                        <li><a href="#" class="popup-trigger" data-popup="popup1">Books for Computer Science</a></li>
+                        <li><a href="#" class="popup-trigger" data-popup="popup2">Books for Business Administration</a>
+                        </li>
+                        <li><a href="#" class="popup-trigger" data-popup="popup3">Books English language and
+                                Literature</a></li>
+                        <!-- Add more popup triggers here if needed -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Popup Boxes -->
+            <div id="popup1" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h3>Books Available for Computer Science Department</h3>
+                    <ul>
+                        <li>Introduction to Computing</li>
+                        <li>Digital Logic Design</li>
+                        <li>Computer Organization and Architecture</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Database Management Systems</li>
+                        <li>Operating Systems</li>
+                        <li>Software Engineering</li>
+                        <li>Computer Networks</li>
+                        <li>Web Development</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Machine Learning</li>
+                        <li>Data Mining and Data Warehousing</li>
+                        <li>Cybersecurity</li>
+                        <li>Human-Computer Interaction</li>
+                        <li>Cloud Computing</li>
+                        <li>Mobile Application Development</li>
+                        <li>Computer Graphics</li>
+                        <li>Parallel and Distributed Computing</li>
+                        <li>Internet of Things (IoT)</li>
+                        <li>Game Development</li>
+                        <li>Robotics</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
+                        <li>Bioinformatics</li>
+                        <li class="special-list-item">Discover more books @Library</li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div id="popup2" class="popup">
+                <!-- Popup content for Mathematics -->
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h3>Books Available for Business Administration Department</h3>
+                    <ul>
+                        <li>Accounting</li>
+                        <li>Finance</li>
+                        <li>Marketing</li>
+                        <li>Management</li>
+                        <li>Human Resource Management</li>
+                        <li>Operations Management</li>
+                        <li>Business Law</li>
+                        <li>Economics</li>
+                        <li>Business Ethics</li>
+                        <li>Entrepreneurship</li>
+                        <li>Supply Chain Management</li>
+                        <li>International Business</li>
+                        <li>Organizational Behavior</li>
+                        <li>Strategic Management</li>
+                        <li>Information Systems Management</li>
+                        <li class="special-list-item">Discover more books @Library</li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Books Available -->
+
+
+
+
+
+
+
+        <div id="popup3" class="popup">
+            <!-- Popup content for History -->
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h3>Books Available English Language and Literature Department</h3>
+                <ul>
+                    <li>Introduction to English Literature</li>
+                    <li>English Language and Linguistics</li>
+                    <li>British Literature: Medieval to Renaissance</li>
+                    <li>British Literature: Restoration to Romanticism</li>
+                    <li>British Literature: Victorian to Modern</li>
+                    <li>American Literature</li>
+                    <li>Postcolonial Literature</li>
+                    <li>World Literature</li>
+                    <li>Literary Theory and Criticism</li>
+                    <li>Shakespeare Studies</li>
+                    <li>Contemporary Literature</li>
+                    <li>English Language Teaching (ELT)</li>
+                    <li>Translation Studies</li>
+                    <li>Creative Writing</li>
+                    <li>Drama and Performance Studies</li>
+                    <li>Film Studies</li>
+                    <li>Research Methods in English Studies</li>
+                    <li>Gender and Literature</li>
+                    <li>Cultural Studies</li>
+                    <li>Psychoanalytic Approaches to Literature</li>
+                    <li>Environmental Literature</li>
+                    <li>Postmodern Literature</li>
+                    <li>Science Fiction and Fantasy Literature</li>
+                    <li>Victorian Studies</li>
+                    <li class="special-list-item">Discover more books @Library</li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Library Contents -->
+    <div class="container">
+        <!-- Computer Science Books Carousel -->
+        <h1>Computer Science Section </h1><br>
+        <div id="carouselCS" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./Library/pics/cs1.jpg" alt="Computer Science Book 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/cs2.jpg" alt="Computer Science Book 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/cs3.jpg" alt="Computer Science Book 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/cs4.jpg" alt="Computer Science Book 4">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/cs10.jpg" alt="Computer Science Book 5">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/eng10.jpg" alt="Computer Science Book 6">
+                </div>
+                <!-- Add more carousel items here -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselCS" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselCS" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a><br>
+            <div id="computer-science-books" class="library-section">
+                <h2 style="font-size: 1.2rem;">Computer Science Books</h2>
+                <p class="cs-p">The computer science department at Shah Abdul Latif University Shahdadkot Campus boasts
+                    a diverse
+                    collection of books catering to students' academic needs and interests. These books cover a wide
+                    range of topics within the field of computer science, providing valuable resources for both
+                    undergraduate and graduate students, as well as faculty members.</p><br>
+
+                <h3 style="font-size: 1.2rem;">Comprehensive Coverage</h3>
+                <p class="cs-p">The collection includes fundamental textbooks covering introductory topics such as
+                    "Introduction to
+                    Computing" and "Digital Logic Design," which serve as building blocks for understanding the core
+                    concepts of computer science. Additionally, students have access to books on advanced subjects like
+                    "Artificial Intelligence," "Machine Learning," and "Data Mining and Data Warehousing," enabling them
+                    to delve deeper into specialized areas of study.</p><br>
+
+                <h3 style="font-size: 1.2rem;">Specialized Topics</h3>
+                <p class="cs-p">The library houses books that focus on specialized areas within computer science,
+                    including
+                    "Cybersecurity," "Cloud Computing," "Mobile Application Development," and "Internet of Things
+                    (IoT)." These resources equip students with the knowledge and skills necessary to explore emerging
+                    technologies and address contemporary challenges in the field.</p><br>
+
+                <h3 style="font-size: 1.2rem;">Practical Applications</h3>
+                <p class="cs-p">Moreover, the collection includes books on practical applications of computer science
+                    principles,
+                    such as "Web Development," "Game Development," and "Robotics." These resources not only enhance
+                    students' theoretical understanding but also provide hands-on guidance for implementing concepts in
+                    real-world scenarios.</p><br>
+
+                <h3 style="font-size: 1.2rem;">Research and Innovation</h3>
+                <p class="cs-p">For students and researchers interested in advancing the frontier of computer science,
+                    the library
+                    offers books on cutting-edge topics like "Natural Language Processing," "Computer Vision," and
+                    "Bioinformatics." These resources support academic exploration and encourage innovation in the
+                    field.</p><br>
+
+                <h3 style="font-size: 1.2rem;">Accessible Learning</h3>
+                <p class="cs-p">The computer science book collection at Shah Abdul Latif University Shahdadkot Campus is
+                    curated to
+                    ensure accessibility and relevance to the curriculum. Students have the opportunity to explore
+                    diverse perspectives and engage with authoritative texts, fostering a conducive environment for
+                    academic growth and intellectual inquiry.</p>
+            </div>
+
+        </div>
+
+        <!-- Business Administration Books Carousel -->
+        <br>
+        <hr class="custom-hr">
+        <h1>Business Administration Section</h1>
+        <br>
+        <div id="carouselBA" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./Library/pics/bba1.jpg" alt="Business Administration Book 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/bb2.jpg" alt="Business Administration Book 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/bb4.jpg" alt="Business Administration Book 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/bb5.jpg" alt="Business Administration Book 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/bb7.jpg" alt="Business Administration Book 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/eng10.jpg" alt="Business Administration Book 3">
+                </div>
+                <!-- Add more carousel items here -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselBA" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselBA" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a><br>
+
+        </div>
+        <div id="business-administration-books" class="library-section">
+            <h2 style="font-size: 1.2rem;">Business Administration Books</h2>
+            <p class="cs-p">The Business Administration department at Shah Abdul Latif University Shahdadkot Campus
+                offers an extensive collection of books tailored to meet the academic requirements and interests of
+                students. Covering various aspects of business management, these books serve as valuable resources for
+                students pursuing degrees in business administration, as well as for faculty members.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Foundational Knowledge</h3>
+            <p class="cs-p">The collection encompasses foundational textbooks covering essential topics such as
+                "Accounting," "Finance," "Marketing," and "Management." These texts provide students with a solid
+                understanding of fundamental principles and theories in business administration, laying the groundwork
+                for their academic and professional development.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Specialized Areas</h3>
+            <p class="cs-p">In addition to core subjects, the library houses books that delve into specialized areas
+                within business administration, including "Human Resource Management," "Operations Management,"
+                "Business Law," and "Entrepreneurship." These resources equip students with specialized knowledge and
+                skills necessary to excel in their chosen fields.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Contemporary Issues</h3>
+            <p class="cs-p">Moreover, the collection includes books addressing contemporary issues and trends shaping
+                the business landscape, such as "Business Ethics," "Supply Chain Management," and "International
+                Business." Students gain insights into current challenges and opportunities facing businesses globally,
+                preparing them to navigate dynamic and complex environments.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Strategic Insights</h3>
+            <p class="cs-p">For those interested in strategic management and decision-making, the library offers
+                resources on topics like "Organizational Behavior," "Strategic Management," and "Information Systems
+                Management." These books provide valuable insights and frameworks for analyzing business situations and
+                formulating effective strategies.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Practical Application</h3>
+            <p class="cs-p">Furthermore, the collection includes practical guides and case studies that facilitate the
+                application of theoretical concepts in real-world business scenarios. Students have access to resources
+                on "Business Case Analysis," "Project Management," and "Leadership," enabling them to develop practical
+                skills essential for success in the business world.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Research and Innovation</h3>
+            <p class="cs-p">For aspiring researchers and scholars, the library offers books on research methods in
+                business administration, as well as publications exploring emerging trends and innovations in the field.
+                Topics such as "Business Innovation," "Economic Analysis," and "Market Research" encourage students to
+                engage in academic inquiry and contribute to the advancement of knowledge in business administration.
+            </p><br>
+
+            <h3 style="font-size: 1.2rem;">Facilitating Learning</h3>
+            <p class="cs-p">The Business Administration book collection at Shah Abdul Latif University Shahdadkot Campus
+                is curated to facilitate learning and professional development. With a diverse array of resources
+                covering foundational concepts, specialized areas, and contemporary issues, students have the
+                opportunity to explore, learn, and grow, preparing them for successful careers in the dynamic field of
+                business administration.</p>
+        </div>
+        <hr class="custom-hr"><br>
+
+        <!-- English Books Carousel -->
+        <h1>English Language and Literature Books</h1>
+        <br>
+        <div id="carouselEnglish" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./Library/pics/eng1.jpg" alt="English Book 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/eng2.jpg" alt="English Book 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/eng3.jpg" alt="English Book 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/eng4.jpg" alt="English Book 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/eng6.jpg" alt="English Book 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/eng10.jpg" alt="English Book 3">
+                </div>
+                <!-- Add more carousel
+                                 Add more carousel items here -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselEnglish" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselEnglish" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div><br>
+        <div id="english-books" class="library-section">
+            <h2 style="font-size: 1.2rem;">English Language and Literature Books</h2>
+            <p class="cs-p">The English Language and Literature department at Shah Abdul Latif University Shahdadkot
+                Campus offers a rich collection of books encompassing various aspects of English language, literature,
+                and literary theory. This diverse compilation caters to the academic needs and interests of students,
+                scholars, and enthusiasts alike, providing a comprehensive resource for the study and appreciation of
+                English language and literature.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Literary Classics</h3>
+            <p class="cs-p">The collection includes renowned literary classics spanning different eras and genres, such
+                as works by William Shakespeare, Jane Austen, Charles Dickens, and Virginia Woolf. These timeless
+                masterpieces offer profound insights into human experiences, cultural contexts, and literary traditions,
+                serving as essential readings for students and scholars of English literature.</p><br>
+
+            <h3 style="font-size: 1.2rem;">British and American Literature</h3>
+            <p class="cs-p">Students have access to a wide range of texts representing British and American literary
+                traditions, from medieval epics to contemporary novels. The collection encompasses works by canonical
+                authors like Geoffrey Chaucer, John Milton, Emily Dickinson, and F. Scott Fitzgerald, providing a
+                comprehensive overview of the evolution of English and American literature.</p><br>
+
+            <h3 style="font-size: 1.2rem;">World Literature</h3>
+            <p class="cs-p">In addition to English-language literature, the library houses translations and works of
+                world literature from diverse cultures and regions. Students can explore the richness and diversity of
+                global literary traditions through texts by authors such as Gabriel García Márquez, Chinua Achebe,
+                Haruki Murakami, and Naguib Mahfouz, gaining insights into cross-cultural narratives and perspectives.
+            </p><br>
+
+            <h3 style="font-size: 1.2rem;">Literary Theory and Criticism</h3>
+            <p class="cs-p">For those interested in the study of literary theory and criticism, the collection includes
+                seminal works by prominent theorists such as Roland Barthes, Jacques Derrida, Michel Foucault, and
+                Edward Said. These texts provide theoretical frameworks and analytical tools for interpreting literary
+                texts, fostering critical thinking and scholarly inquiry.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Contemporary Literature</h3>
+            <p class="cs-p">Moreover, the library offers a selection of contemporary literature reflecting current
+                trends and themes in English-language writing. Students can explore works by contemporary authors
+                addressing issues such as identity, globalization, gender, and social justice, engaging with texts that
+                resonate with contemporary realities and concerns.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Language Studies and Pedagogy</h3>
+            <p class="cs-p">In addition to literary works, the collection includes resources on English language
+                studies and pedagogy, covering topics such as linguistics, language acquisition, and language teaching
+                methodologies. These resources support language learners and educators in enhancing their linguistic
+                proficiency and teaching effectiveness.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Research and Scholarship</h3>
+            <p class="cs-p">For scholars and researchers, the library provides access to scholarly journals, critical
+                editions, and research monographs in the field of English language and literature. These resources
+                facilitate academic research and scholarship, enabling students and faculty members to contribute to the
+                ongoing discourse in the discipline.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Cultural and Interdisciplinary Studies</h3>
+            <p class="cs-p">Additionally, the collection encompasses texts on cultural studies, interdisciplinary
+                approaches to literature, and intersections between literature and other disciplines such as history,
+                psychology, and philosophy. Students can explore interdisciplinary perspectives and engage in nuanced
+                analyses of literary texts within broader socio-cultural contexts.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Fostering Appreciation and Inquiry</h3>
+            <p class="cs-p">The English Language and Literature book collection at Shah Abdul Latif University
+                Shahdadkot Campus aims to foster appreciation, inquiry, and critical engagement with the English
+                language and literary heritage. Through its diverse and expansive resources, the library encourages
+                students to explore the multifaceted dimensions of language, literature, and literary expression,
+                nurturing a lifelong passion for learning and literary inquiry.</p>
+        </div>
+
+
+        <!-- General Section -->
+        <hr class="custom-hr"><br>
+        <br>
+        <h1>General Books Category</h1>
+        <br>
+        <div id="carouselEnglish" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./Library/pics/gen1.jpg" alt="English Book 1">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/gen2.jpg" alt="English Book 2">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/gen3.jpg" alt="English Book 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/gen4.jpg" alt="English Book 3">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Library/pics/eng10.jpg" alt="English Book 3">
+                </div>
+                <!-- Add more carousel
+                                 Add more carousel items here -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselEnglish" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselEnglish" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div><br>
+        <div id="general-books" class="library-section">
+            <h2 style="font-size: 1.2rem;">General Books</h2>
+            <p class="cs-p">The library at Shah Abdul Latif University Shahdadkot Campus boasts a diverse collection of
+                general books covering a wide range of subjects. Whether you're interested in history, Pakistan studies,
+                world affairs, or other topics, our collection has something for everyone.</p><br>
+
+            <h3 style="font-size: 1.2rem;">History</h3>
+            <p class="cs-p">Explore the past with our collection of historical books covering various periods, regions,
+                and themes. From ancient civilizations to modern history, delve into the fascinating narratives of the
+                past.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Pakistan Studies</h3>
+            <p class="cs-p">Gain insights into the history, culture, and society of Pakistan with our selection of
+                Pakistan studies books. Explore the diverse aspects of Pakistani identity, politics, and heritage.</p>
+            <br>
+
+            <h3 style="font-size: 1.2rem;">World Affairs</h3>
+            <p class="cs-p">Stay informed about global issues and developments with our collection of books on world
+                affairs. From geopolitics to international relations, explore the complex dynamics shaping the world
+                today.</p><br>
+
+            <h3 style="font-size: 1.2rem;">Related Books</h3>
+            <p class="cs-p">Discover more in-depth knowledge with our selection of books on sociology, economics,
+                science, psychology, and philosophy. Our library offers valuable resources to expand your understanding
+                of various disciplines and interdisciplinary perspectives.</p>
+        </div>
+
+        <!-- Library Incharge Section -->
+        <br><br>
+        <hr class="custom-hr"><br>
+        <h1>Library Incharge</h1>
+        <br>
+        <div class="library-incharge">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./Library/pics/passport-size-photo.jpg" alt="Library Incharge 1">
+                    <p class="staff-name">Name: John Doe</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./Library/pics/passport-size-photo.jpg" alt="Library Incharge 2">
+                    <p class="staff-name">Name: John Doe</p>
+
+                </div>
+                <div class="col-md-4">
+                    <img src="./Library/pics/passport-size-photo.jpg" alt="Library Incharge 3">
+                    <p class="staff-name">Name: John Doe</p>
+
+                </div>
+            </div>
+        </div>
+        <hr class="custom-hr"><br>
+
+        <!-- Library Rules -->
+        <br>
+        <h1>Library Rules</h1>
+        <div class="library-rules">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Rule</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <td>Rule 1</td>
+                    <td>Students must present a valid university ID card to borrow books.</td>
+                    </tr>
+                    <tr>
+                        <td>Rule 2</td>
+                        <td>Books can be borrowed for a maximum period of two weeks.</td>
+                    </tr>
+                    <tr>
+                        <td>Rule 3</td>
+                        <td>Renewal of book loans is allowed for an additional period if there are no reservations by
+                            other users.</td>
+                    </tr>
+                    <tr>
+                        <td>Rule 4</td>
+                        <td>Overdue fines will be charged for late returns according to the library's policy.</td>
+                    </tr>
+                    <tr>
+                        <td>Rule 5</td>
+                        <td>Users are responsible for the care and proper handling of borrowed books.</td>
+                    </tr>
+                    <tr>
+                        <td>Rule 6</td>
+                        <td>Reserved books must be collected within three days of notification, or the reservation will
+                            be canceled.</td>
+                    </tr>
+                    <tr>
+                        <td>Rule 7</td>
+                        <td>Food and drinks are not allowed inside the library premises.</td>
+                    </tr>
+                    <tr>
+                        <td>Rule 8</td>
+                        <td>Mobile phones should be switched to silent mode inside the library to maintain a conducive
+                            environment for study.</td>
+                    </tr>
+                    <tr>
+                        <td>Rule 9</td>
+                        <td>Users should maintain silence and refrain from engaging in disruptive behavior inside the
+                            library.</td>
+                    </tr>
+                    <tr>
+                        <td>Rule 10</td>
+                        <td>Reference materials and rare books are for in-library use only and cannot be borrowed.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <hr>
+        <div class="quick-links">
+            <a href="./Contact_us.html">Contact us</a>
+            <a href="./Image_Gallery.html">Image Gallery</a>
+            <a href="./Computer_Lab.html">Computer Labs</a>
+            <a href="./ORIC.html">Campus</a>
+        </div>
+        <p>Shah Abdul Latif University, Shahdadkot Campus &copy; 2024. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript and your custom script -->
+    <!-- Bootstrap JavaScript and your custom script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./Library/script.js"></script>
+
+    <!-- Initialize the carousels -->
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                pause: "true" // Set pause on hover to false
+            });
+        });
+    </script>
+</body>
+
+</html>

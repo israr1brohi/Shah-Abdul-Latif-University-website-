@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admission Portal</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+
+    <link rel="stylesheet" href="./Admission Portal/style.css">
+    <link rel="stylesheet" href="./Admission Portal/footer.css">
+    <link rel="stylesheet" href="./Admission Portal/dropdown.css">
+    <link rel="stylesheet" href="./Admission Portal/body.css">
+
+
+</head>
+
+<body>
+
+    <!-- MOBILE SCREEN -->
+    <input type="checkbox" id="menu">
+    <!-- END MOBILE SCREEN -->
+    <header>
+        <div class="logo">
+            <svg id="logo-35" width="50" height="39" viewBox="0 0 50 39" fill="none" xmlns="">
+                <!--Adding SALU LOGO-->
+                <image href="logo.png" width="50" height="39" />
+            </svg>
+            <h1>Shah Abdul Latif University <span>Shahdadkot Campus</span></h1>
+        </div>
+        <!-- MOBILE SCREEN -->
+        <label for="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <!-- END MOBILE SCREEN -->
+        <nav>
+            <a style="font-weight: bold;" href="./index.html">Home</a>
+
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">University</a>
+                <div class="dropdown-content">
+                    <a href="./Admission.html">Admissions</a>
+                    <a href="./Library.html">Library</a>
+                    <a href="./QES.html">QES</a>
+
+                    <a href="./ORIC.html">ORIC</a>
+
+                    <a href="./Examination.html">Examination Policy</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">Administration</a>
+                <div class="dropdown-content">
+                    <a href="./PVC.html">PVC Message</a>
+                    <a href="./faculty_page.html">Faculty Staff</a>
+
+                    <a href="./Administrative_Staff.html">Administrative Staff</a> <!-- New link -->
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">Departments</a>
+                <div class="dropdown-content">
+                    <a href="./CS_Department.html">Computer Science</a>
+                    <a href="./BBA_department.html">Business Administration</a>
+                    <a href="./English_department.html">English</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <br><br><br><br><br><br>
+            <h1 class="portal-info">Admission Portal</h1>
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfyqMObrxEY3o8EsRx_hiXMiFRDW8VGZDqhoI-NEN0UynzGPg/viewform?embedded=true"
+                width="640" height="1768" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <a href="#" class="download-pdf-btn" onclick="downloadPDF()">Download PDF</a>
+        </div>
+
+        <script>
+            function downloadPDF() {
+                window.open('./Admission Portal/form.pdf', '_blank'); // Replace 'path/to/your/pdf/file.pdf' with the actual PDF file path
+            }
+        </script>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <hr>
+            <div class="quick-links">
+                <a href="./Contact_us.html">Contact us</a>
+                <a href="./Image_Gallery.html">Image Gallery</a>
+                <a href="./Computer_Lab.html">Computer Labs</a>
+                <a href="./ORIC.html">Campus</a>
+            </div>
+            <p>Shah Abdul Latif University, Shahdadkot Campus &copy; 2024. All rights reserved.</p>
+        </footer>
+
+        <script src="./Admission Portal/script.js"></script>
+
+    </body>
+
+</html>

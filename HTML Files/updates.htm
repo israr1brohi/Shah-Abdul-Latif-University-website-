@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVC Message</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+
+
+    <link rel="stylesheet" href="./Annoucements/style.css">
+    <link rel="stylesheet" href="./Annoucements/conten.css">
+    <link rel="stylesheet" href="./Annoucements/drop.css">
+    <link rel="stylesheet" href="./Annoucements/pvc.css">
+</head>
+
+<body>
+
+    <!-- MOBILE SCREEN -->
+    <input type="checkbox" id="menu">
+    <!-- END MOBILE SCREEN -->
+    <header>
+        <div class="logo">
+            <svg id="logo-35" width="50" height="39" viewBox="0 0 50 39" fill="none" xmlns="">
+                <!--Adding SALU LOGO-->
+                <image href="logo.png" width="50" height="39" />
+            </svg>
+            <h1>Shah Abdul Latif University <span>Shahdadkot Campus</span></h1>
+        </div>
+        <!-- MOBILE SCREEN -->
+        <label for="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <!-- END MOBILE SCREEN -->
+        <nav>
+            <a style="font-weight: bold;" href="./index.html">Home</a>
+
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">University</a>
+                <div class="dropdown-content">
+                    <a href="./Admission.html">Admissions</a>
+                    <a href="./Library.html">Library</a>
+                    <a href="./QES.html">QES</a>
+
+                    <a href="./ORIC.html">ORIC</a>
+                    <a href="./Examination.html">Examination Policy</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">Administration</a>
+                <div class="dropdown-content">
+                    <a href="./PVC.html">PVC Message</a>
+                    <a href="./faculty_page.html">Faculty Staff</a>
+                    <a href="./Administrative_Staff.html">Administrative Staff</a> <!-- New link -->
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="dropbtn" href="#" onclick="toggleDropdown(event)">Departments</a>
+                <div class="dropdown-content">
+                    <a href="./CS_Department.html">Computer Science</a>
+                    <a href="./BBA_department.html">Business Administration</a>
+                    <a href="./English_department.html">English</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br>
+    <br><br><br>
+
+    <div class="ann-page">
+        <h2>Latest Announcements</h2>
+    </div>
+    <section class="announcement-section">
+        <div class="announcement">
+            <div class="card">
+                <h3 class="today-announcement"><a href="#today">Today's Announcement</a></h3>
+                <p>Stay tuned for an important announcement today at 3:00 PM. Check out what's been announced today.
+                    Click the links to download the pdf.
+                </p>
+
+                <div class="links">
+                    <a href="./Annoucements/midterm.pdf">Link1</a>
+                    <a href="./Annoucements/midterm.pdf">Link2</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="announcement">
+            <div class="card">
+                <h3>Midterm Exams</h3>
+                <p>Don't forget that midterm exams are scheduled for next week. Prepare well!</p>
+
+                <div class="links">
+                    <a href="./Annoucements/midterm.pdf">Timetable for Computer Science</a>
+                    <a href="./Annoucements/midterm.pdf">Timetable for Business Administration</a>
+                    <a href="./Annoucements/midterm.pdf">Timetable for English</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="announcement">
+            <div class="card">
+                <h3>Final Exams</h3>
+                <p>Don't forget that midterm exams are scheduled for next week. Prepare well!</p>
+
+                <div class="links">
+                    <a href="./Annoucements/midterm.pdf">Timetable for Computer Science</a>
+                    <a href="./Annoucements/midterm.pdf">Timetable for Business Administration</a>
+                    <a href="./Annoucements/midterm.pdf">Timetable for English</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="announcement">
+            <div class="card">
+                <h3>Merit List 2024</h3>
+                <p>The merit list for the year 2024 has been published. Click following links view the list.</p>
+
+                <div class="links">
+                    <a href="./Annoucements/midterm.pdf">Merit List for Computer Science</a>
+                    <a href="./Annoucements/midterm.pdf">Merit List for Business Administration</a>
+                    <a href="./Annoucements/midterm.pdf">Merit list for English</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</html>
+<!-- Footer Section -->
+<footer class="footer">
+    <hr>
+    <div class="quick-links">
+        <a href="./Contact_us.html">Contact us</a>
+        <a href="./Image_Gallery.html">Image Gallery</a>
+        <a href="./Computer_Lab.html">Computer Labs</a>
+        <a href="./ORIC.html">Campus</a>
+    </div>
+    <p>Shah Abdul Latif University, Shahdadkot Campus &copy; 2024. All rights reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('.announcement-section .links a');
+        links.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent default link behavior
+                const pdfUrl = this.getAttribute('href');
+                window.open(pdfUrl, '_blank'); // Open PDF file in a new tab
+            });
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

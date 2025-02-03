@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include your CSS files -->
+    <link rel="stylesheet" href="./ImageGallery/style.css">
+    <link rel="stylesheet" href="./ImageGallery/conten.css">
+    <link rel="stylesheet" href="./ImageGallery/drop.css">
+    <link rel="stylesheet" href="./ImageGallery/slideView.css">
+
+
+
+
+</head>
+<!-- MOBILE SCREEN -->
+<input type="checkbox" id="menu">
+<!-- END MOBILE SCREEN -->
+<header>
+    <div class="logo">
+        <svg id="logo-35" width="50" height="39" viewBox="0 0 50 39" fill="none" xmlns="">
+            <!--Adding SALU LOGO-->
+            <image href="logo.png" width="50" height="39" />
+        </svg>
+        <h1>Shah Abdul Latif University <span>Shahdadkot Campus</span></h1>
+    </div>
+    <!-- MOBILE SCREEN -->
+    <label for="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+    <!-- END MOBILE SCREEN -->
+    <nav>
+        <a style="font-weight: bold;" href="./index.html">Home</a>
+
+        <div class="dropdown">
+            <a class="dropbtn" href="#" onclick="toggleDropdown(event)">University</a>
+            <div class="dropdown-content">
+                <a href="./Admission.html">Admissions</a>
+                <a href="./Library.html">Library</a>
+                <a href="./QES.html">QES</a>
+
+                <a href="./ORIC.html">ORIC</a>
+                <a href="./Examination.html">Examination Policy</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="dropbtn" href="#" onclick="toggleDropdown(event)">Administration</a>
+            <div class="dropdown-content">
+                <a href="./PVC.html">PVC Message</a>
+                <a href="./faculty_page.html">Faculty Staff</a>
+                <a href="./Administrative_Staff.html">Administrative Staff</a> <!-- New link -->
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <a class="dropbtn" href="#" onclick="toggleDropdown(event)">Departments</a>
+            <div class="dropdown-content">
+                <a href="./CS_Department.html">Computer Science</a>
+                <a href="./BBA_department.html">Business Administration</a>
+                <a href="./English_department.html">English</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <!-- --------------------------------Campus Images-------------------------------- -->
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./ImageGallery/HomeSlider/ad1.png" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/HomeSlider/ad2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/HomeSlider/ad3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/HomeSlider/ad4.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/HomeSlider/ad5.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="content">
+            <!-- Text content will go here -->
+            <h2>Student Life</h2>
+            <p>Welcome to the vibrant student life at Shah Abdul Latif University Shahdadkot Campus! Established in 2017
+                under the guidance of the Higher Education Commission and the Sindh Government, our campus is dedicated
+                to providing quality education to the community of Shahdadkot.</p>
+
+            <p>Step into our state-of-the-art classrooms where learning comes to life. Designed to facilitate
+                interactive sessions and discussions, our classrooms provide a conducive environment for academic
+                excellence. With modern teaching aids and comfortable seating arrangements, you'll find yourself fully
+                engaged in every lecture.</p>
+
+            <p>Immerse yourself in a world of knowledge at our expansive library. Housing a vast collection of books,
+                journals, and research papers, our library is the perfect place for academic exploration. Whether you're
+                studying for exams or conducting research for your projects, you'll find all the resources you need
+                right at your fingertips.</p>
+
+
+
+
+
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- --------------------------------Software Expo Images-------------------------------- -->
+
+    <div class="container">
+        <div id="carouselExampleIndicators1" class="carousel slide slider" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./ImageGallery/software expopicsArt/softExpo1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/software expopicsArt/softExpo2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/software expopicsArt/softExpo3.png" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/software expopicsArt/SoftExpo4.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="content">
+            <!-- Text content will go here -->
+            <h2>Software Expo 2024</h2>
+            <p>
+                Students from Shah Abdul Latif University Shahdadkot campus recently visited the Main Campus in Khairpur
+                to participate in the Software Expo 204. This event showcased innovative projects by final-year
+                students, providing a platform for learning and collaboration.</p>
+            <p>The initiative signifies progress in addressing the challenge of limited access to quality higher
+                education in the region. With the establishment of new campuses and events like the Software Expo,
+                educational opportunities are expanding. However, challenges such as poverty and resource scarcity
+                persist, hampering access to education in prestigious institutions outside the region.</p>
+
+        </div>
+    </div>
+
+
+
+    <hr>
+    <!-- --------------------------------laptop Scheme 2024-------------------------------- -->
+
+
+    <div class="container">
+        <div id="carouselExampleIndicators2" class="carousel slide slider" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./ImageGallery/laptop scheme/lp1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/laptop scheme/lp2.png" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/laptop scheme/lp3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/laptop scheme/lp4.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <div class="content">
+            <!-- Text content will go here -->
+            <h2>PM Laptop Scheme 2024</h2>
+            <p>Students at Shah Abdul Latif University Shahdadkot campus recently received laptops through the PM Laptop
+                Scheme 2023-2024. The distribution event held at Main Campus Khairpur was a moment of pride for all.
+            </p>
+            <p>The process prioritized merit, ensuring fairness. This initiative equips students with vital tools for
+                academic progress, emphasizing the government's commitment to education enhancement nationwide. It
+                signifies a move towards a more inclusive learning environment, bridging the digital gap effectively.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- --------------------------------Final Exams-------------------------------- -->
+
+    <div class="container">
+        <div id="carouselExampleIndicators3" class="carousel slide slider" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./ImageGallery/final exams/final1.png" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/final exams/final2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/final exams/fnal3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/final exams/final4.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/final exams/final5.png" class="d-block w-100" alt="Slide 3">
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <div class="content">
+            <!-- Text content will go here -->
+            <h2>Final Examination</h2>
+            <p>
+                At Shah Abdul Latif University Shahdadkot Campus, final examinations are conducted with utmost
+                stringency to ensure a fair and honest academic environment. Rigorous measures are implemented to
+                prevent any form of cheating or academic misconduct during exams. </p>
+            <p>The administration maintains a strict vigilance to uphold the integrity of the examination process,
+                promoting a culture of academic honesty and integrity among students. Additionally, the examination
+                checking process is transparent, guaranteeing fairness and accuracy in the evaluation of students'
+                performance. This commitment to maintaining high standards of academic conduct fosters a conducive
+                learning environment where students can demonstrate their knowledge and skills confidently.</p>
+        </div>
+    </div>
+
+    <!-- --------------------------------Medical Camp-------------------------------- -->
+
+    <div class="container">
+        <div id="carouselExampleIndicators4" class="carousel slide slider" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators4" data-slide-to="4"></li>
+
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./ImageGallery/alkhidmatPicArt/alkhid1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/alkhidmatPicArt/alkhid2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/alkhidmatPicArt/alkhid3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/alkhidmatPicArt/alkhid4.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/alkhidmatPicArt/alkhid5.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <div class="content">
+            <!-- Text content will go here -->
+            <h2>AL- Khidmat Orientation Session</h2>
+            <p>
+                The Al-Khidmat Orientation Session at Shah Abdul Latif University Shahdadkot Campus was a vital
+                initiative focused on raising awareness about the spread of contagious diseases. Through interactive
+                discussions and informative presentations, students were enlightened about the importance of preventive
+                measures and hygiene practices to curb the transmission of illnesses. </p>
+            <p>The session emphasized the significance of community health and collective responsibility in combating
+                contagious diseases effectively. Attendees gained valuable insights into identifying symptoms,
+                practicing proper sanitation, and promoting overall well-being. Such initiatives play a crucial role in
+                equipping individuals with knowledge and empowering communities to safeguard public health.</p>
+        </div>
+    </div>
+    <hr>
+    <!-- --------------------------------Al-khidmat-------------------------------- -->
+
+
+    <div class="container">
+        <div id="carouselExampleIndicators5" class="carousel slide slider" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators5" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators5" data-slide-to="4"></li>
+
+
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./ImageGallery/medical camp al khimat/md1.jpg" class="d-block w-100" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/medical camp al khimat/md2.jpg" class="d-block w-100" alt="Slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/medical camp al khimat/md3.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/medical camp al khimat/md4.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./ImageGallery/medical camp al khimat/md5.jpg" class="d-block w-100" alt="Slide 3">
+                </div>
+
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <div class="content">
+            <!-- Text content will go here -->
+            <h2>AL- Khidmat Medical Camp</h2>
+            <p>
+                Students at Shah Abdul Latif University Shahdadkot Campus enthusiastically participated in a medical
+                camp aimed at providing healthcare services to underserved communities. With compassion and dedication,
+                they offered their support in various capacities, assisting healthcare professionals, organizing
+                logistics, and providing basic medical aid to patients. </p>
+            <p>This hands-on experience not only enhanced their understanding of healthcare delivery but also instilled
+                a sense of empathy and social responsibility. Through their active involvement, students contributed to
+                improving the well-being of individuals in need while gaining invaluable practical skills and fostering
+                a spirit of humanitarianism. Such initiatives embody the university's commitment to community engagement
+                and holistic education.</p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./ImageGallery/script.js"></script>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <hr>
+        <div class="quick-links">
+            <a href="../Contact_us.html">Contact us</a>
+            <a href="./Image_Gallery.html">Image Gallery</a>
+            <a href="./Computer_Lab.html">Computer Labs</a>
+            <a href="./ORIC.html">Campus</a>
+        </div>
+        <p>Shah Abdul Latif University, Shahdadkot Campus &copy; 2024. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
