@@ -1,0 +1,154 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.slider {
+    margin-top: 90px;
+    width: 50%;
+    /* Adjust as needed */
+}
+
+.content {
+    width: 45%;
+    /* Adjust as needed */
+    text-align: justify;
+    margin-top: 120px;
+}
+
+
+.content,
+.content-second {
+    background-color: rgba(162, 162, 236, 0.153);
+    /* Blue color with 10% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    color: #2000d2;
+    /* Change color of h2 if needed */
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content p,
+.content-second p {
+    color: #000000cb;
+    /* Change color of paragraphs if needed */
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.content-second {
+    text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        width: calc(100% - 10px);
+        /* Calculate width with margin */
+        margin: 0 5px;
+        /* Add 5px margin on left and right */
+        text-align: justify;
+
+    }
+
+
+    .second-paragraph {
+
+        text-align: justify;
+
+    }
+}
+
+
+#second-paragraph {
+
+    /* Calculate width with margin */
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /* Add 5px margin on left and right */
+    text-align: justify;
+
+}
+
+
+
+
+/* -------------CS Departments ---------------- */
+
+.facility {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #edc9c958;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.facility h3 {
+    color: #a0170b;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.facility p {
+    color: #666;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.facility ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.facility li {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.facility li:before {
+    content: "•";
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.facility li:last-child {
+    margin-bottom: 0;
+}
+
+@media(max-width:768px) {
+
+    .facility {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.carousel-inner img {
+    border-radius: 10px;
+}

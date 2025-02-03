@@ -1,0 +1,126 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #919792;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #9dd8fd;
+}
+
+h2 {
+    color: black;
+    font-family: sans-serif;
+    /* Adjust the font size of h2 for smaller screens */
+}
+
+@media screen and (max-width: 700px) {
+    table {
+        overflow-x: auto;
+        display: block;
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 23px;
+        /* Adjust the font size of h2 for smaller screens */
+    }
+}
+
+
+@media(max-width:496px) {
+
+    th,
+    td {
+        border: 1px solid #a4f4aa;
+        padding: 5px;
+        /* Decrease padding to make the cells smaller */
+        text-align: left;
+        font-size: 10px;
+        /* Decrease font size to make the text smaller */
+    }
+
+    h2 {
+        font-size: 15px;
+        /* Adjust the font size of h2 for smaller screens */
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+
+/* Styles for tables with the "eligibility-table" class */
+table.eligibility-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+table.eligibility-table th,
+table.eligibility-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table.eligibility-table th {
+    background-color: #03718f;
+    color: #ffffff;
+}
+
+/* Apply Now button styles */
+.apply-button {
+    background-color: #171bf0;
+    /* Green background color */
+    border: none;
+    /* No border */
+    color: white;
+    /* White text color */
+    padding: 10px 20px;
+    /* Reduced padding */
+    text-align: center;
+    /* Center text */
+
+    /* Remove underline */
+    display: inline-block;
+    /* Display as inline-block */
+    font-size: 14px;
+    /* Reduced font size */
+    cursor: pointer;
+    /* Cursor style */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color */
+    align-self: center;
+    /* Center vertically */
+    text-decoration: none;
+}
+
+/* Apply Now button hover effect */
+.apply-button:hover {
+    background-color: #da0f0f;
+
+    /* Darker green on hover */
+    .apply-button a {
+        text-decoration: none;
+    }
+}
+
+/* Center button horizontally */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
