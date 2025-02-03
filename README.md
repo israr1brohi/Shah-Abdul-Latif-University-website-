@@ -48,7 +48,7 @@ Shah-Abdul-Latif-University-website/
 Developed by **Israr Brohi**
 
 ## License
-This project is open-source and free to use under the **MIT License**.
+This project is open-source and free to use under the **Israr-Brohi License**.
 
 **Screenshots**
 ## Project Screenshots
