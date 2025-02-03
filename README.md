@@ -50,3 +50,13 @@ Developed by **Israr Brohi**
 ## License
 This project is open-source and free to use under the **MIT License**.
 
+**Screenshots**
+## Project Screenshots
+
+### Home Page
+![Home Page](screenshots/homepage.png)
+
+### About Page
+![About Page](screenshots/aboutpage.png)
+
+
