@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+body {
+    background: rgba(229, 248, 248, 0.792);
+
+}
+
+footer a {
+    color: aliceblue;
+}
+
+header {
+    background-color: #FFD700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 30px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.01);
+    z-index: 100;
+
+
+}
+
+.logo {
+    display: flex;
+    gap: 1px;
+    transform: scale(1.3);
+    margin-left: 28px;
+    /* Position the logo to the right with a margin */
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+    /* Remove the margin at the bottom */
+    margin-left: 0px;
+    /* Reset left margin */
+}
+
+h1 span {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    /* Add margin-top to create space between lines */
+}
+
+
+
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    /* font-weight: bold; */
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #7e77df;
+}
+
+input {
+    display: none;
+}
+
+@media (max-width: 1080px) {
+
+
+    nav {
+        position: absolute;
+        top: 100px;
+        background: white;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 0;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    nav a:nth-child(1) {
+        margin-top: 50px;
+    }
+
+    label {
+        width: 45px;
+        height: 30px;
+        position: relative;
+    }
+
+    label div {
+        width: 100%;
+        height: 5px;
+        background: #312ECB;
+        position: absolute;
+        transform: translateY(-50%);
+        border-radius: 99px;
+        transition: 0.3s;
+        transform: scale(1);
+    }
+
+    label div:nth-child(1) {
+        top: 0;
+    }
+
+    label div:nth-child(2) {
+        top: 50%;
+    }
+
+    label div:nth-child(3) {
+        top: 100%;
+    }
+
+    input:checked+header nav {
+        height: 100vh;
+    }
+
+    input:checked+header label div:nth-child(1) {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+
+    input:checked+header label div:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+
+    input:checked+header label div:nth-child(2) {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@media(max-width:604px) {
+
+
+    label {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        margin-left: 20px;
+    }
+
+    h1 span {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:564px) {
+
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h1 span {
+        font-size: 13px;
+    }
+
+
+}
+
+
+@media(max-width:485px) {
+
+
+    h1 {
+        font-size: 15px;
+    }
+
+    h1 span {
+        font-size: 8px;
+    }
+
+    label {
+        width: 10px;
+        height: 25px;
+        position: relative;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+
+}
+
+
+
+
+
+nav a {
+    color: black;
+    /* Default color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    /* Smooth transition for color and background-color change */
+    scroll-padding: 1px;
+    /* Add padding */
+    border: 1px solid transparent;
+    /* Add transparent border */
+    border-radius: 5px;
+    /* Make borders round */
+}
+
+nav a:hover {
+    color: white;
+    /* Change text color on hover */
+    background-color: blue;
+    /* Fill in color on hover */
+    border-color: blue;
+    /* Change border color on hover */
+}
