@@ -54,9 +54,13 @@ This project is open-source and free to use under the **MIT License**.
 ## Project Screenshots
 
 ### Home Page
-![Home Page](screenshots/homepage.png)
+![Home Page](Screenshot 2025-01-30 022843.png)
 
-### About Page
-![About Page](screenshots/aboutpage.png)
+### Mobile VIew
+![Home Page](Screenshot 2025-01-30 023544.png)
+
+### Fee Structure
+![Fee Structure](Screenshot 2025-01-30 022918.png)
+
 
 
