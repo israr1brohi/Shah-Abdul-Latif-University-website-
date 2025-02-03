@@ -1,0 +1,139 @@
+.map-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.map-container {
+
+
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.map-container iframe {
+    width: 100%;
+}
+
+
+/* icon adjustment */
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.info-item img {
+    width: 30px;
+    /* Adjust as needed */
+    height: auto;
+    margin-left: 10px;
+
+}
+
+.info-item p {
+    font-size: 16px;
+
+    margin-left: 3px;
+}
+
+
+/* social links */
+
+.follow-us {
+    text-align: center;
+}
+
+.follow-us p {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+    /* Adjust spacing between icons as needed */
+}
+
+.social-media img {
+    width: 30px;
+    /* Adjust as needed */
+    height: auto;
+}
+
+
+/* message button */
+
+.send-message-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    /* Add this line to center the button horizontally */
+}
+
+
+.send-message-button:hover {
+    background-color: #0056b3;
+}
+
+body {
+
+    background: linear-gradient(to bottom, #fcfcfc, #1592ec71);
+    /* Adjust colors as needed */
+
+}
+
+
+.contact-page {
+    text-align: center;
+    color: #0008ef;
+}
+
+.contact-page h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+@media(max-width:700px) {
+    .contact-page h1 {
+
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+    .send-message-button {
+        padding: 6px 13px;
+        /* Decrease the padding to make the button smaller */
+        font-size: 12px;/
+    }
+
+}
+
+@media(max-width:350px) {
+    .send-message-button {
+        padding: 5px 8px;
+        /* Decrease the padding to make the button smaller */
+        font-size: 10px;/
+    }
+
+}
+
+
+
+
+/* form css */
