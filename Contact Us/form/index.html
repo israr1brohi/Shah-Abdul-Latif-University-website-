@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Send us a message</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+
+            <input type="hidden" name="access_key" value="f8139556-8452-4a23-bd92-22a994fdcd4a">
+
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <div class="input-container">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="input-container">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+            </div>
+
+            <!-- hCaptcha Spam Protection -->
+            <div class="h-captcha" data-captcha="true"></div>
+
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+
+    <!-- Required for hCaptcha -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+
+</html>
