@@ -54,13 +54,13 @@ This project is open-source and free to use under the **MIT License**.
 ## Project Screenshots
 
 ### Home Page
-![Home Page](Screenshot 2025-01-30 022843.png)
+![Home Page](screenshots/home-page.png)
 
 ### Mobile VIew
-![Home Page](Screenshot 2025-01-30 023544.png)
+![Home Page](screenshots/mobile-view.png)
 
 ### Fee Structure
-![Fee Structure](Screenshot 2025-01-30 022918.png)
+![Fee Structure](screenshots/fee-structure.png)
 
 
 
